@@ -37,7 +37,7 @@ double absoluteValue(double x){
 
 double square_root(double x){
     double guess =1;
-    while (absoluteValue((guess*guess)/x -1.0) >= 0.00001){
+    while (absoluteValue((guess*guess)/x -1.0) >= 0.001){
         guess = ((x/guess) + guess)/2;
 
     }
@@ -179,9 +179,11 @@ void quest(double Q[4], int nos,double data[3][2*nos]) // Based upon the input d
         double a[N]; // weight vector
         //a[0] = 1.0/N;a[1] = 1.0/N;a[2] = 1.0/N;a[3] = 1.0/N;a[4] = 1.0/N;
         int c;
+        double weight = 1.0/N;
         for(c = 0;c < N;c++){
                 a[c] = 0;
-                a[c] = 1.0/N;}
+                a[c] = weight;
+        }
         double guess = 1; // initial guess
         Matrix_3 B,S;
         matrix_construct(&B,0); // Constructs a 3*3 Matrix with all zeroes
@@ -199,8 +201,9 @@ void quest(double Q[4], int nos,double data[3][2*nos]) // Based upon the input d
         Matrix_3 check;
         // We have the csv file stored in **data
         int i =0;
+        int nos_2 = 2*nos;
         //int nos = 4;//nos is number of stars*2
-        for( i = 0;i < nos*2;i++){ // i is the column number
+        for( i = 0;i < nos_2;i++){ // i is the column number
                 if(i < nos){
                         Vec_construct(&r[i],data[0][i],data[1][i],data[2][i]); // Construct r vectors according to the data read
                 }
@@ -272,7 +275,7 @@ void quest(double Q[4], int nos,double data[3][2*nos]) // Based upon the input d
                 zTSSz = dot(&z,&temp2);
 
                 double rho = guess; // sum of weights
-                for ( i = 0; i < 10; i++) {
+                for ( i = 0; i < 5; i++) {
                         double x1 = f(rho);
                         double x2 = f_bar(rho);
                         rho =rho - x1/x2;
