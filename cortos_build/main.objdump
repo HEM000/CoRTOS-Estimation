@@ -6680,7 +6680,7 @@ Disassembly of section .text:
     ec54:	92 10 61 20 	or  %g1, 0x120, %o1	! 13920 <PAGE_TABLE_BASE+0x520>
     ec58:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     ec5c:	94 10 61 68 	or  %g1, 0x168, %o2	! 13968 <__func__.1266>
-    ec60:	96 10 21 94 	mov  0x194, %o3
+    ec60:	96 10 21 95 	mov  0x195, %o3
     ec64:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     ec68:	98 10 61 28 	or  %g1, 0x128, %o4	! 13928 <PAGE_TABLE_BASE+0x528>
     ec6c:	7f ff f2 82 	call  b674 <__cortos_log_printf>
@@ -6696,7 +6696,7 @@ Disassembly of section .text:
     ec94:	92 10 61 20 	or  %g1, 0x120, %o1	! 13920 <PAGE_TABLE_BASE+0x520>
     ec98:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     ec9c:	94 10 61 68 	or  %g1, 0x168, %o2	! 13968 <__func__.1266>
-    eca0:	96 10 21 95 	mov  0x195, %o3
+    eca0:	96 10 21 96 	mov  0x196, %o3
     eca4:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     eca8:	98 10 61 38 	or  %g1, 0x138, %o4	! 13938 <PAGE_TABLE_BASE+0x538>
     ecac:	7f ff f2 72 	call  b674 <__cortos_log_printf>
@@ -6712,7 +6712,7 @@ Disassembly of section .text:
     ecd4:	92 10 61 20 	or  %g1, 0x120, %o1	! 13920 <PAGE_TABLE_BASE+0x520>
     ecd8:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     ecdc:	94 10 61 68 	or  %g1, 0x168, %o2	! 13968 <__func__.1266>
-    ece0:	96 10 21 96 	mov  0x196, %o3
+    ece0:	96 10 21 97 	mov  0x197, %o3
     ece4:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     ece8:	98 10 61 48 	or  %g1, 0x148, %o4	! 13948 <PAGE_TABLE_BASE+0x548>
     ecec:	7f ff f2 62 	call  b674 <__cortos_log_printf>
@@ -6728,7 +6728,7 @@ Disassembly of section .text:
     ed14:	92 10 61 20 	or  %g1, 0x120, %o1	! 13920 <PAGE_TABLE_BASE+0x520>
     ed18:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     ed1c:	94 10 61 68 	or  %g1, 0x168, %o2	! 13968 <__func__.1266>
-    ed20:	96 10 21 97 	mov  0x197, %o3
+    ed20:	96 10 21 98 	mov  0x198, %o3
     ed24:	03 00 00 4e 	sethi  %hi(0x13800), %g1
     ed28:	98 10 61 58 	or  %g1, 0x158, %o4	! 13958 <PAGE_TABLE_BASE+0x558>
     ed2c:	7f ff f2 52 	call  b674 <__cortos_log_printf>

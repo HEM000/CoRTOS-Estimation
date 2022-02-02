@@ -2392,7 +2392,7 @@ f_bar.1217:
 	.section	".rodata"
 	.align 8
 .LC10:
-	.asciz	"INFO"
+	.asciz	"DEBUG"
 	.align 8
 .LC11:
 	.asciz	"main.c"
@@ -2436,7 +2436,7 @@ main:
 	or	%g1, %lo(.LC11), %o1
 	sethi	%hi(__func__.1266), %g1
 	or	%g1, %lo(__func__.1266), %o2
-	mov	404, %o3
+	mov	405, %o3
 	sethi	%hi(.LC12), %g1
 	or	%g1, %lo(.LC12), %o4
 	call	__cortos_log_printf, 0
@@ -2452,7 +2452,7 @@ main:
 	or	%g1, %lo(.LC11), %o1
 	sethi	%hi(__func__.1266), %g1
 	or	%g1, %lo(__func__.1266), %o2
-	mov	405, %o3
+	mov	406, %o3
 	sethi	%hi(.LC13), %g1
 	or	%g1, %lo(.LC13), %o4
 	call	__cortos_log_printf, 0
@@ -2468,7 +2468,7 @@ main:
 	or	%g1, %lo(.LC11), %o1
 	sethi	%hi(__func__.1266), %g1
 	or	%g1, %lo(__func__.1266), %o2
-	mov	406, %o3
+	mov	407, %o3
 	sethi	%hi(.LC14), %g1
 	or	%g1, %lo(.LC14), %o4
 	call	__cortos_log_printf, 0
@@ -2484,7 +2484,7 @@ main:
 	or	%g1, %lo(.LC11), %o1
 	sethi	%hi(__func__.1266), %g1
 	or	%g1, %lo(__func__.1266), %o2
-	mov	407, %o3
+	mov	408, %o3
 	sethi	%hi(.LC15), %g1
 	or	%g1, %lo(.LC15), %o4
 	call	__cortos_log_printf, 0

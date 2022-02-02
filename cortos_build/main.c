@@ -399,12 +399,13 @@ void main()
                 }
         }*/
         double out[4];
+	//long int t0=ajit_barebones_clock();
         quest(&out,nos,data);
-
-        CORTOS_INFO("q_3.x = %lf",out[0]);
-        CORTOS_INFO("q_3.y = %lf",out[1]);
-        CORTOS_INFO("q_3.z = %lf",out[2]);
-        CORTOS_INFO("q_4 = %lf",out[3]);
-        //CORTOS_INFO("alpha = %lf",alpha);
+	//long int t1=ajit_barebones_clock();
+	CORTOS_DEBUG("q_3.x = %lf",out[0]);
+        CORTOS_DEBUG("q_3.y = %lf",out[1]);
+        CORTOS_DEBUG("q_3.z = %lf",out[2]);
+        CORTOS_DEBUG("q_4 = %lf",out[3]);
+	//CORTOS_INFO("alpha = %lf",alpha);
         cortos_exit(0);
 }
